@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Character Counter App</h1>
+
+    <div class="main-content">
+        <p id="enterch">Enter Character : </p>
+        <div id="output">
+            <h2 id="outputch">Character : <span id="ch_count">0</span> Words : <span id="word_count">0</span></h2>
+    </div>
+        <textarea name="para" id="para" cols="30" rows="10" placeholder="Type here"  oninput="count_ch(this.value)"></textarea>
+        <div class="btns">
+        <button id="submit" class="submit">Submit</button>
+        <button class="reset" id="reset">Reset</button>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
